@@ -4,9 +4,9 @@
 	"description": "Parcel, Learning parcel module bundler",
 	"browserslist": "> 0.1%, last 5 versions",
 	"scripts": {
-		"dev": "npm run clean && parcel src/index.html",
-		"build": "npm run clean && parcel build src/*.html --public-url ./",
-		"clean": "rimraf ./dist && rimraf ./.parcel-cache"
+		"dev": "npm run clean && parcel src/index.html --dist-dir docs -p 3000",
+		"build": "npm run clean && parcel build src/*.html --dist-dir docs --public-url ./",
+		"clean": "rimraf ./docs && rimraf ./.parcel-cache"
 	},
 	"keywords": [],
 	"author": "James Alderson",
